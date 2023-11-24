@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="todo_form">
+            <div class="todo-title">
+                <h1 style="color: #872341;">To-Do List</h1>
+            </div>
+            <div class="todo-date">
+                <h2 id="current-date" style="margin: 0; font-size: 20px; color: #BE3144;"></h2>
+                <h1 id="current-day" style="margin: 0; font-size: 60px; color: #BE3144;"></h1>
+                <h1 id="current-time" style="margin: 0; font-family: 'Calculator', sans-serif; font-size: 60px; color: #F05941;"></h1>
+            </div>
+            <div class="add-task">
+                <input id="task-input" placeholder="Add a task here" type="text">
+                <button id="add-button" onclick="addTask()"><h1 style="font-size: 40px; margin: 0; color: #25020d;"><b>+</b></h1></button>
+            </div>
+            <div class="task-lists">
+                <ul id="task-container">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+</html>
